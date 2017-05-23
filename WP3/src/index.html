@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Event Data</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/init.js"></script>
+
+    <!-- Favicon
+    ––––––––––––––––––––––––––––––––––––––––––––––––––
+    <link rel="icon" type="image/png" href="favicon.png"> -->
+</head>
+
+<body>
+<header>
+    <div class="container">
+        <div class="row">
+            <h2>Monkey Business Eventplanner</h2>
+        </div>
+    </div>
+</header>
+<div id="content">
+    <div class="container">
+        <form id="addForm">
+            <fieldset>
+                <legend>Nieuwe Event Aanmaken</legend>
+                <label class="field">naam:</label><input type="text" name="naam"><br>
+                <label class="field">begindatum:</label><input type="text" name="beginDatum"
+                                                               placeholder="YYYY-MM-DD (2017-01-01)"><br>
+                <label class="field">einddatum:</label><input type="text" name="eindDatum"
+                                                              placeholder="YYYY-MM-DD (2017-01-01)"><br>
+                <label class="field">bezetting:</label><input type="text" name="bezetting"><br>
+                <label class="field">kost:</label><input type="text" name="kost"><br>
+                <label class="field">materialen:</label><input type="text" name="materialen"><br>
+                <label class="field">klantnummer:</label><input type="text" name="person_ID"><br>
+                <input type="hidden" name="ID">
+                <button id="newEvent" type="button" class="addForm">Event Aanmaken</button>
+                <button id=editEvent type="button" class=addForm disabled> Event Bewerken</button>
+            </fieldset>
+        </form>
+        <div class="row">
+            <table class="u-full-width">
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Start</th>
+                    <th>End</th>
+                    <th>Bezetting</th>
+                    <th>Kost</th>
+                    <th>Materialen</th>
+                    <th>Actions</th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>

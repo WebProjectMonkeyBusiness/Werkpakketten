@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+    <link href="DragAndDropCSS.css" rel="stylesheet">
+    <head>
+        <title>Drag and Drop</title>
+
+    </head>
+    <body>
+
+    <div class="imageDiv" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img id="drag1" src="ImageToDragAndDrop.png" draggable="true" ondragstart="drag(event)" height="295px" width="295px"/>
+    </div>
+
+    <div class="imageDiv" id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+    </div>
+
+    <script src="DragAndDropScript.js">
+        document.getElementById("div1").addEventListener("drop", drop(event));
+        document.getElementById("div1").addEventListener("dragover", allowDrop(event));
+
+        document.getElementById("div2").addEventListener("drop", drop(event));
+        document.getElementById("div2").addEventListener("dragover", allowDrop(event));
+
+        document.getElementById("drag1").addEventListener("dragstart", drag(event));
+    </script>
+    </body>
+</html>
+
+<!--Bron van de drag and drop code: https://www.w3schools.com/HTML/html5_draganddrop.asp-->

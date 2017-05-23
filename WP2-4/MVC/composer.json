@@ -1,0 +1,27 @@
+{
+"autoload": {
+
+"psr-4": {
+"Model\\": "src/Model/",
+"Model\\Entities\\": "src/Model/Entities"
+
+
+}
+},
+  "config": {
+    "disable-tls": true,
+    "secure-http": false
+    
+  },
+  "require": {
+    "proengsoft/laravel-jsvalidation": "~1.1"
+  },
+  "require-dev": {
+    "barryvdh/laravel-ide-helper": "^2.3"
+  },
+  "scripts":{
+    "post-update-cmd":[
+      "php artisan vendor:publish --provider=\"Proengsoft\\JsValidation\\JsValidationServiceProvider\" --tag=public --force"
+    ]
+  }
+}
